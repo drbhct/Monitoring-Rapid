@@ -1,0 +1,22 @@
+{
+  "name": "bootstrap",
+  "version": "1.0.0",
+  "description": "a css thing",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "dummy text"
+  },
+  "keywords": [
+    "abc"
+  ],
+  "author": "Alan",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

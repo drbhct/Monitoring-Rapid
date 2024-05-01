@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring Dashboard</title>
+    <link rel="stylesheet" href="./dashboardstyle.css" />
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-img">
+            <img src="./images/logo.png" alt="logo" href="dashboard.html" width="200px">
+        </div>
+        <ul class="navlinks">
+            <li>Monitoring Dashboard</li>
+            <li>Facilities</li>
+            <li>Resources</li>
+        </ul>
+    </nav>
+    <main>
+        <!-- <table class="grid-container">
+            <tr>
+                <th class="grid-headers">Facility</th>
+                <th class="grid-headers">Provider</th>
+                <th class="grid-headers">Resource</th>
+                <th class="grid-headers">Due Date</th>
+                <th class="grid-headers">Notes</th>
+            </tr>
+        </table> -->
+
+        <!-- <div class="gridContainer">
+            <div class="theader facility">Facility</div>
+            <div class="theader provider">Provider</div>
+            <div class="theader resource">Resource</div>  
+            <div class="theader due-date">Due Date</div>
+            <div class="theader notes">Notes</div>
+        </div> -->
+
+        <button id="btn">Add Data</button>
+        <table id="table">
+            <thead >
+                <tr>
+                    <th class="theader" width="15%">Facility</th>
+                    <th class="theader" width="15%">Provider</th>
+                    <th class="theader" width="15%">Resource</td>
+                    <th class="theader" width="15%">Due Date</th>
+                    <th class="theader" width="40%">Notes</th>
+                </tr>
+            </thead> 
+        </table>
+
+        
+
+    </main>
+</body>
+
+
+
+<script>
+    var myTable = document.getElementById('table')
+    var myBtn = document.getElementById('btn')
+
+
+    console.log(myTable);
+
+    myBtn.addEventListener("click", function(){
+        console.log("I clicked the button");
+        myTable.innerHTML += `<tr>
+                <td>Facility</td>
+                <td>Provider</td>
+                <td>Resource</td>
+                <td>Due Date</td>
+                <td>Notes</td>
+            </tr>`
+    })
+</script>
+
+</html>
