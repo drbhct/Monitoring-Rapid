@@ -1,0 +1,55 @@
+<!-- views/page.hbs -->
+<!-- {{#layout}}
+
+    {{#contentFor "header"}}
+        {{> header}}
+    {{/contentFor}}
+
+    {{#contentFor "body"}}
+        <main>
+            <h1>This is a Page</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </main>
+    {{/contentFor}}
+
+    {{#contentFor "footer"}}
+        {{> footer}}
+    {{/contentFor}}
+
+{{/layout}} -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring Dashboard</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+   
+    <div class="container">
+        <div class="left half">
+            <img src="../public/images/logo.png" width="400px" class="logo" alt="logo">
+        </div>
+        <div class="right half">
+            <div class="form-box">
+                <h2>Monitoring Tracker</h2>
+                <form action="/login" method="post" class="login-form">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" required>
+                    <label for="password">Password:</label>
+                    <input type="text" name="password" id="password" required>
+                    <input type="submit" class="submit-button" value="Login">
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

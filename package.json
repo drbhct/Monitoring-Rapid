@@ -2,10 +2,10 @@
   "name": "bootstrap",
   "version": "1.0.0",
   "description": "a css thing",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "npm test",
-    "start": "npm start"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,10 @@
   "author": "Alan",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.19.2"
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2",
+    "nodemon": "^3.1.0",
+    "save-dev": "^0.0.1-security"
   }
 }
